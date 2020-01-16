@@ -19,8 +19,8 @@ pipeline {
                                   usernameVariable: 'dsiva427@gmail.com',
                                   passwordVariable: 'Sivaapssdc427#']]) {
 
-                    bat 'C://Progra~1/CloudFoundry/cf login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
-                    bat 'C://Progra~1/CloudFoundry/cf push'
+                    bat 'C://Progra~1/Cloud%20%Foundry/cf login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
+                    bat 'C://Progra~1/Cloud%20%Foundry/cf push'
                 }
             }
 
