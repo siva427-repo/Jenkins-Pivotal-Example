@@ -2,6 +2,10 @@ pipeline {
 
     agent any
 
+    environment {
+      PATH = "C:/Program Files/Cloud Foundry/cf"
+    }
+
     stages {
 
         stage ('Build') {
@@ -20,8 +24,8 @@ pipeline {
                                   usernameVariable: 'dsiva427@gmail.com',
                                   passwordVariable: 'Sivaapssdc427#']]) {
 
-                    bat 'cd %C:/Program Files/Cloud Foundry/cf% login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
-                    bat 'cd C:/Program Files/Cloud Foundry/cf push'
+                    bat '%PATH% login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
+                    bat '%PATH% push'
                 }
             }
 
