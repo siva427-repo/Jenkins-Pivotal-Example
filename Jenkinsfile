@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-       stage('Build') {
+       stage("Build") {
           steps {
-             withMaven(maven : maven_3_6_3) {
+             withMaven(maven: maven_3_6_3) {
                 bat 'mvn clean package'
              }
           }
        }
-       stage('Deploy'){
+       stage("Deploy"){
            steps {
               withCredentials([[$class  : 'UsernamePasswordMultiBinding',
                                 credentialsId : 'PCF_LOGIN',
