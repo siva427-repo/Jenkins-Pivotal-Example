@@ -3,4 +3,4 @@ applications:
   - name: CICD Jenkins Pivotal Example
     instances: 1
     memory: 800m
-    path: target/Jenkings-Pivotal-Example-0.0.1-SNAPSHOT.jar
+    path: target/Jenkins-Pivotal-Example-0.0.1-SNAPSHOT.jar
