@@ -24,8 +24,8 @@ pipeline {
                                   usernameVariable: 'dsiva427@gmail.com',
                                   passwordVariable: 'Sivaapssdc427#']]) {
 
-                    bat '%PATH% login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
-                    bat '%PATH% push'
+                    bat '${PATH} login -a http://api.run.pivotal.io -u dsiva427@gmail.com -p Sivaapssdc427#'
+                    bat '${PATH} push'
                 }
             }
 
